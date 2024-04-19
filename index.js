@@ -101,4 +101,12 @@ function myFunction() {
     } else {
       x.type = "password";
     }
-  }
+  
+function myFunctionconform() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  } 
