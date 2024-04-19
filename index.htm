@@ -18,14 +18,18 @@
                 <input type="password" id="confirm_password" placeholder="Confirm Password" required>
             </div>
             <input type="submit" value="Login" onclick="login()">
+            <hr><span style="color:grey;font-size: 10;">or</span><hr>
         </form>
         <div class="social-login">
             <!-- Placeholder button for login with Google -->
-            <button class="google" onclick="loginWithGoogle()">Login with Google</button>
-            <button class="facebook" onclick="loginWithFacebook()">Login with Facebook</button>
+            <!-- <button class="google">Login with Google</button> -->
+            <div class="g-signin2"  onclick="loginWithGoogle()" data-onsuccess="onSignIn"></div>
+            <div class="f-signin2" onclick="loginWithFacebook()" data-onsuccess="onSignIn"></div>
         </div>
     </div>
-
+    <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+    <!-- <button onclick="signOut()">Sign out</button> -->
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
 <script src="./index.js"></script>
 </body>
 </html>
