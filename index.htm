@@ -13,9 +13,13 @@
         <h2>Login Form</h2>
         <form id="loginForm" onsubmit="return false;">
             <input type="text" id="email_or_username" placeholder="Email or Username" required>
-            <input type="password" id="password" placeholder="Password" oninput="checkPassword()" required>
+              <div class="input-container">
+                <input type="password" id="password" placeholder="Password" oninput="checkPassword()" required>
+                <input type="checkbox" onclick="myFunction()">Show Password
+              </div>
             <div id="confirmPasswordDiv" style="display: none;">
-                <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                <input type="password" id="password" placeholder="Confirm Password" required   >
+                <input type="checkbox" onclick="myFunction()">Show Password
             </div>
             <input type="submit" value="Login" onclick="login()">
             <hr><span style="color:grey;font-size: 10;">or</span><hr>
